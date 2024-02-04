@@ -1,0 +1,58 @@
+.header {
+  color: $thirdColor;
+  font-family: $thirdFont;
+  padding: 40px 40px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    h1 {
+      font-weight: 200;
+    }
+    
+    .bi-github {
+      font-size: 26px;
+      transition: all 1s;
+    }
+
+    &:hover {
+      .bi-github {
+        color: $secondaryColor;
+      }
+    }
+  }
+
+  &-list {
+    width: 250px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+
+    &Item {
+      display: flex;
+      align-items: center;
+      transition: all 1s;
+      font-weight: 400;
+
+      .line {
+        height: 1px;
+        width: 20px;
+        background-color: #fff;
+        transition: all 1s;
+      }
+
+      &:hover {
+        color: $secondaryColor;
+        .line {
+          background-color: $secondaryColor;
+        }
+      }
+    }
+  }
+}
