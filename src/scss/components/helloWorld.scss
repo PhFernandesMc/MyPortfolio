@@ -28,7 +28,8 @@
     display: flex;
     justify-content: right;
     align-items: center;
-    img {
+    .image {
+      height: 400px;
       width: 400px;
     }
   }
