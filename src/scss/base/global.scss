@@ -7,9 +7,14 @@
 body {
   background-color: $primaryColor;
   font-family: $primaryFont;
+  color: $thirdColor;
 }
 
 a {
   text-decoration: none;
   color: $thirdColor;
+}
+
+main {
+  padding: 0px 120px;
 }
