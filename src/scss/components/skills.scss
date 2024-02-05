@@ -1,0 +1,27 @@
+.section-skills {
+  height: 70vh;
+  display: flex;
+  .container {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+
+    .image {
+      width: 500px;
+      height: 300px;
+      filter: brightness(0.8);
+    }
+
+    &-right {
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: self-start;
+      flex-wrap: wrap;
+
+      .icon {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+}

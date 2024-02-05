@@ -1,9 +1,47 @@
 ---
+import { Image } from "astro:assets";
+import Laptop from "../images/mac.png";
+import HTML from '../images/html-1.svg';
+import CSS from '../images/css-3.svg';
+import JS from '../images/logo-javascript.svg';
+import SASS from '../images/sass-1.svg';
+import BOOT from '../images/bootstrap-5-1.svg';
+import JQ from '../images/jquery-4.svg';
+import NODE from '../images/nodejs-icon.svg';
+import GIT from '../images/git-bash.svg';
+import PYTHON from '../images/python-5.svg';
+import MYSQL from '../images/mysql-6.svg';
+import DOCKER from '../images/docker-4.svg';
+import FLASK from '../images/flask.svg';
 
 ---
 
-<hr>
+<hr />
 
-<h2 class="title">Skill</h2>
+<h2 id="Skill" class="title">Skills</h2>
 
-<section id="Skill" class="section-skills"></section>
+<section class="section-skills">
+  <div class="container container-left">
+    <Image src={Laptop} alt="" class="image" />
+  </div>
+  <div class="container container-right">
+    <h3>Have experience</h3>
+    <div class="tech">
+      <Image src={HTML} alt="" class="icon" />
+      <Image src={CSS} alt="" class="icon" />
+      <Image src={JS} alt="" class="icon" />
+      <Image src={SASS} alt="" class="icon" />
+      <Image src={BOOT} alt="" class="icon" />
+      <Image src={JQ} alt="" class="icon" />
+      <Image src={NODE} alt="" class="icon" />
+      <Image src={GIT} alt="" class="icon" />
+    </div>
+    <h3>Learning</h3>
+    <div class="tech">
+      <Image src={PYTHON} alt="" class="icon" />
+      <Image src={FLASK} alt="" class="icon" />
+      <Image src={MYSQL} alt="" class="icon" />
+      <Image src={DOCKER} alt="" class="icon" />
+    </div>
+  </div>
+</section>
