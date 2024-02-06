@@ -1,9 +1,68 @@
 ---
-
+import { Image } from "astro:assets";
+import html from "../images/html-1.svg";
+import css from "../images/css-3.svg";
+import js from "../images/logo-javascript.svg";
+import jquery from "../images/jquery-4.svg";
+import node from "../images/node-js-svgrepo-com.svg";
+import typescript from "../images/typescript-logo-svgrepo-com.svg" 
+import sass from "../images/sass-1.svg";
+import bootstrap from "../../images/bootstrap-5-1.svg";
+import git from "../images/git-bash.svg";
+import astro from "../images/astro-svgrepo-com.svg"
+const techsMartered: any[] = [
+  { techName: "HTML", techImage: html },
+  { techName: "astro", techImage: astro },
+  { techName: "CSS", techImage: css },
+  { techName: "javaScript", techImage: js },
+  { techName: "Jquery", techImage: jquery },
+  { techName: "Node.js", techImage: node },
+  { techName: "typeScript", techImage: typescript },
+  { techName: "Sass", techImage: sass },
+  { techName: "Bootstrap", techImage: bootstrap },
+  { techName: "git", techImage: git },
+];
+import python from "../images/python-svgrepo-com.svg";
+import flask from "../images/flask-svgrepo-com.svg";
+import mysql from "../images/mysql-6.svg";
+const techsLearning: any[] = [
+  { techName: "python", techImage: python },
+  { techName: "flask", techImage: flask },
+  { techName: "MySQL", techImage: mysql },
+];
 ---
 
-<hr>
+<hr />
 
-<h2 class="title">Skill</h2>
+<h2 id="Skill" class="title">Skill</h2>
 
-<section id="Skill" class="section-skills"></section>
+<section class="section-skills">
+  <div class="container-right">
+    <div class="tech">
+      <h2>Mastered</h2>
+      <ul>
+        {
+          techsMartered.map((tech) => (
+            <li class="tech-items">
+              <Image src={tech.techImage} alt="html" class={"tech-icons"} />
+              <p>{tech.techName}</p>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+    <div class="tech">
+      <h2>Learning</h2>
+      <ul>
+        {
+          techsLearning.map((tech) => (
+            <li class="tech-items">
+              <Image src={tech.techImage} alt="html" class={"tech-icons"} />
+              <p>{tech.techName}</p>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+</section>
