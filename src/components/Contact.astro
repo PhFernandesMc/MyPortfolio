@@ -1,0 +1,75 @@
+---
+import { Image } from "astro:assets";
+import phone from "./images/phone-flip-svgrepo-com.svg";
+import email from "./images/email-svgrepo-com.svg";
+import linkedin from "./images/linkedin-icon-3.svg";
+---
+
+<hr />
+
+<h2 id="Contact" class="title">Contact</h2>
+
+<section class="section-contact">
+  <div class="container-interface">
+    <h2 class="title-contact">let's getting in touch</h2>
+    <form action="https://api.staticforms.xyz/submit" method="post">
+      <input type="text" name="name" id="" placeholder="your name:" required />
+      <input
+        type="text"
+        name="email"
+        id=""
+        placeholder="your Email:"
+        required
+      />
+      <input
+        type="text"
+        name="phoneNumber"
+        id=""
+        placeholder="your phone number:"
+      />
+      <textarea name="message" id="" placeholder="your message" required
+      ></textarea>
+      <div class="btn-submit">
+        <input type="submit" value="Send Message" />
+      </div>
+      <input
+        type="hidden"
+        name="accessKey"
+        value="aa7095b2-8b28-43f4-a97b-3bb838cb1afa"
+      />
+      <input type="hidden" name="redirectTo" value="http://localhost:4321/" />
+    </form>
+  </div>
+  <div class="links">
+    <h2>Contact Links</h2>
+    <ul class="links-list">
+      <a href="tel: +1 (778) 723-0142">
+        <li class="links-items">
+          <Image src={phone} alt="html" class={"links-icons"} />
+          <p>+1 (778) 723-0142</p>
+        </li>
+      </a>
+      <a href="mailto: phfernandesmc@gmail.com">
+        <li class="links-items">
+          <Image src={email} alt="html" class={"links-icons"} />
+          <p>phfernandesmc@gmail.com</p>
+        </li>
+      </a>
+      <a href="https://github.com/PhFernandesMc" target="_blank">
+        <li class="links-items">
+          <i class="bi bi-github"></i>
+          <p>phfernandesmc</p>
+        </li>
+      </a>
+      <a
+        href="https://www.linkedin.com/in/pedro-henrique-fernandes-mendes-de-campos-9145732b3/"
+        target="_blank"
+      >
+        <li class="links-items">
+          <Image src={linkedin} alt="html" class={"links-icons"} />
+          <p>Pedro Campos</p>
+        </li>
+      </a>
+    </ul>
+  </div>
+</section>

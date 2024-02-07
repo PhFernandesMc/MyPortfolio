@@ -26,7 +26,7 @@
   ul {
     list-style: none;
     display: flex;
-    gap: 10px;
+    gap: 15px;
     flex-wrap: wrap;
   }
 
@@ -36,9 +36,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid rgb(0, 0, 35);
+    border: 1px solid rgb(0, 0, 26);
     border-radius: 10px;
     padding: 10px;
+    transition: all 1s;
+
+    &:hover {
+      transform: scale(1.1);
+      border-color: $secondaryColor;
+    }
   }
 
   .tech-icons {
