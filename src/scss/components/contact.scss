@@ -1,0 +1,101 @@
+.section-contact {
+  height: 80vh;
+  display: flex;
+  font-family: $thirdFont;
+  justify-content: space-between;
+
+  h2 {
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+
+  form {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+
+    input,
+    textarea {
+      width: 100%;
+      background-color: #1d1d1d;
+      border: 0;
+      outline: 0;
+      padding: 20px 15px;
+      border-radius: 10px;
+      color: $thirdColor;
+      font-size: 18px;
+      transition: all 1s;
+    }
+
+    input:hover {
+      cursor: pointer;
+      transform: scale(1.07);
+      border-color: $secondaryColor;
+    }
+
+    textarea {
+      resize: none;
+      height: 200px;
+    }
+
+    .btn-submit {
+      margin-top: 20px;
+      text-align: center;
+      font-weight: 100;
+
+      input {
+        width: 150px;
+        background-color: $primaryColor;
+        border: 2.5px solid #282828;
+        color: $thirdColor;
+        transition: all 1s;
+
+        &:hover {
+          cursor: pointer;
+          transform: scale(1.07);
+          box-shadow: 0px 0px 8px $secondaryColor;
+          border-color: $secondaryColor;
+        }
+      }
+    }
+  }
+
+  .links {
+    &-list {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      width: 500px;
+      gap: 10px;
+    }
+
+    &-items {
+      display: flex;
+      align-items: center;
+      background-color: #1d1d1d;
+      padding: 20px 15px;
+      border-radius: 10px;
+      transition: all 1s;
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.07);
+        box-shadow: 0px 0px 8px $secondaryColor;
+        border-color: $secondaryColor;
+      }
+    }
+
+    &-icons {
+      width: 20px;
+      height: 20px;
+      margin-right: 20px;
+    }
+
+    .bi-github {
+      margin-right: 20px;
+    }
+  }
+}
