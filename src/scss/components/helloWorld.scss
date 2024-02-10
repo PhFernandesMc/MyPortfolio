@@ -2,9 +2,9 @@
   display: flex;
   .container-left {
     flex-grow: 1;
-    height: 89vh;
+    height: 85vh;
     display: flex;
-    align-items: center;
+    align-items: end;
 
     &Message {
       padding: 30px 0px;
@@ -33,4 +33,14 @@
       width: 400px;
     }
   }
+}
+.footer {
+  .image {
+    width: 20px;
+    height: 20px;
+  }
+  display: flex;
+  justify-content: space-between;
+  font-family: $thirdFont;
+  font-weight: 100;
 }

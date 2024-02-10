@@ -1,6 +1,7 @@
 ---
-import { Image } from 'astro:assets'
-import LegoPicture from './images/pedro_lego.jpeg'
+import { Image } from "astro:assets";
+import LegoPicture from "./images/pedro_lego.jpeg";
+import linkedin from "./images/linkedin-icon-3.svg";
 ---
 
 <section class="section-HelloWorld">
@@ -17,3 +18,16 @@ import LegoPicture from './images/pedro_lego.jpeg'
     <Image src={LegoPicture} alt="Lego Pedro" class="image" />
   </div>
 </section>
+<div class="footer">
+  <a
+    href="https://www.linkedin.com/in/pedro-henrique-fernandes-mendes-de-campos-9145732b3/"
+    target="_blank"
+  >
+    <div>
+      <Image src={linkedin} alt="linkedin" class="image" />
+    </div>
+  </a>
+  <div>
+    <p>&#128064 Looking for job</p>
+  </div>
+</div>

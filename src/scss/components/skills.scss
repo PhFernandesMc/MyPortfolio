@@ -31,12 +31,12 @@
   }
 
   .tech-items {
-    background-color: rgb(16, 16, 16);
+    background-color: $fifthColor;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid rgb(0, 0, 26);
+    border: 1px solid transparent;
     border-radius: 10px;
     padding: 10px;
     transition: all 1s;
@@ -44,6 +44,7 @@
     &:hover {
       transform: scale(1.1);
       border-color: $secondaryColor;
+      box-shadow: 0px 0px 8px $secondaryColor;
     }
   }
 
