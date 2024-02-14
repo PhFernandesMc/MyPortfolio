@@ -10,7 +10,11 @@ import sass from "./images/sass-1.svg";
 import bootstrap from "./images/bootstrap-5-1.svg";
 import git from "./images/git-bash.svg";
 import astro from "./images/astro-svgrepo-com.svg"
-const techsMartered: any[] = [
+interface Objs {
+  techName: string,
+  techImage: ImageMetadata
+}
+const techsMartered: Objs[] = [
   { techName: "HTML", techImage: html },
   { techName: "astro", techImage: astro },
   { techName: "CSS", techImage: css },
@@ -25,7 +29,7 @@ const techsMartered: any[] = [
 import python from "./images/python-svgrepo-com.svg";
 import flask from "./images/flask-white-svgrepo-com.svg";
 import mysql from "./images/mysql-6.svg";
-const techsLearning: any[] = [
+const techsLearning: Objs[] = [
   { techName: "python", techImage: python },
   { techName: "flask", techImage: flask },
   { techName: "MySQL", techImage: mysql },

@@ -1,7 +1,303 @@
 ---
+import { Image } from "astro:assets";
+import html from "./images/html-1.svg";
+import css from "./images/css-3.svg";
+import jquery from "./images/jquery-4.svg";
+import js from "./images/logo-javascript.svg";
+import node from "./images/node-js-svgrepo-com.svg";
+import typescript from "./images/typescript-logo-svgrepo-com.svg";
+import sass from "./images/sass-1.svg";
+import astro from "./images/astro-svgrepo-com.svg";
+interface Objs {
+  techName: string;
+  techImage: ImageMetadata;
+}
 
+const weatherApp: Objs[] = [
+  { techName: "HTML", techImage: html },
+  { techName: "javaScript", techImage: js },
+  { techName: "Jquery", techImage: jquery },
+  { techName: "Node.js", techImage: node },
+  { techName: "Sass", techImage: sass },
+];
+
+const calculator: Objs[] = [
+  { techName: "HTML", techImage: html },
+  { techName: "javaScript", techImage: js },
+  { techName: "CSS", techImage: css },
+];
+
+const memory: Objs[] = [
+  { techName: "HTML", techImage: html },
+  { techName: "javaScript", techImage: js },
+  { techName: "Sass", techImage: sass },
+];
+
+const ticTacToe: Objs[] = [
+  { techName: "HTML", techImage: html },
+  { techName: "javaScript", techImage: js },
+  { techName: "CSS", techImage: css },
+];
 ---
 
-<hr>
+<hr />
 
 <h2 id="Projects" class="title">Projects</h2>
+
+<section class="section-projects">
+  <div class="slider">
+    <div class="slide">
+      <div class="slide-image" id="weather">
+        <a href="https://phfernandesmc.github.io/Weather-App/" target="_blanck"
+        ></a>
+      </div>
+      <div class="slide-content">
+        <div class="project-description">
+          <h2>Project: Weather App</h2>
+          <div>
+            <h3>description:</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+              libero dolor, dolorum at voluptate alias magni, accusamus quam id
+              commodi illo ipsum voluptates sapiente dolores ab nesciunt fugit
+              amet qui?
+            </p>
+          </div>
+          <div class="btn-links">
+            <a
+              href="https://phfernandesmc.github.io/Weather-App/"
+              target="_blanck"
+            >
+              <button class="btn">Project Demo</button>
+            </a>
+            <a
+              href="https://github.com/PhFernandesMc/Weather-App"
+              target="_blank"
+            >
+              <button class="btn">Project Code</button>
+            </a>
+          </div>
+        </div>
+        <div class="project-techs">
+          <h2>Techs in this project:</h2>
+          <div>
+            <ul>
+              {
+                weatherApp.map((tech: Objs): void => (
+                  <li class="tech-items">
+                    <Image
+                      src={tech.techImage}
+                      alt="html"
+                      class={"tech-icons"}
+                    />
+                    <p>{tech.techName}</p>
+                  </li>
+                ))
+              }
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slide">
+      <div class="slide-image" id="calculator">
+        <a
+          href="https://phfernandesmc.github.io/My-Calculator/"
+          target="_blanck"></a>
+      </div>
+      <div class="slide-content">
+        <div class="project-description">
+          <h2>Project: Calculator</h2>
+          <div>
+            <h3>description:</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+              libero dolor, dolorum at voluptate alias magni, accusamus quam id
+              commodi illo ipsum voluptates sapiente dolores ab nesciunt fugit
+              amet qui?
+            </p>
+          </div>
+          <div class="btn-links">
+            <a
+              href="https://phfernandesmc.github.io/My-Calculator/"
+              target="_blanck"
+            >
+              <button class="btn">Project Demo</button>
+            </a>
+            <a
+              href="https://github.com/PhFernandesMc/My-Calculator"
+              target="_blanck"
+            >
+              <button class="btn">Project Code</button>
+            </a>
+          </div>
+        </div>
+        <div class="project-techs">
+          <h2>Techs in this project:</h2>
+          <div>
+            <ul>
+              {
+                calculator.map((tech: Objs): void => (
+                  <li class="tech-items">
+                    <Image
+                      src={tech.techImage}
+                      alt="html"
+                      class={"tech-icons"}
+                    />
+                    <p>{tech.techName}</p>
+                  </li>
+                ))
+              }
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slide">
+      <div class="slide-image" id="memory">
+        <a
+          href="https://phfernandesmc.github.io/My-memory-game/"
+          target="_blanck"></a>
+      </div>
+      <div class="slide-content">
+        <div class="project-description">
+          <h2>Project: Memory game</h2>
+          <div>
+            <h3>description:</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+              libero dolor, dolorum at voluptate alias magni, accusamus quam id
+              commodi illo ipsum voluptates sapiente dolores ab nesciunt fugit
+              amet qui?
+            </p>
+          </div>
+          <div class="btn-links">
+            <a
+              href="https://phfernandesmc.github.io/My-memory-game/"
+              target="_blanck"
+            >
+              <button class="btn">Project Demo</button>
+            </a>
+            <a
+              href="https://github.com/PhFernandesMc/My-memory-game"
+              target="_blanck"
+            >
+              <button class="btn">Project Code</button>
+            </a>
+          </div>
+        </div>
+        <div class="project-techs">
+          <h2>Techs in this project:</h2>
+          <div>
+            <ul>
+              {
+                memory.map((tech: Objs): void => (
+                  <li class="tech-items">
+                    <Image
+                      src={tech.techImage}
+                      alt="html"
+                      class={"tech-icons"}
+                    />
+                    <p>{tech.techName}</p>
+                  </li>
+                ))
+              }
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slide">
+      <div class="slide-image" id="ticTacToe">
+        <a
+          href="https://phfernandesmc.github.io/My-tic-tac-toe/"
+          target="_blanck"></a>
+      </div>
+      <div class="slide-content">
+        <div class="project-description">
+          <h2>Project: Tic-Tac-Toe</h2>
+          <div>
+            <h3>description:</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+              libero dolor, dolorum at voluptate alias magni, accusamus quam id
+              commodi illo ipsum voluptates sapiente dolores ab nesciunt fugit
+              amet qui?
+            </p>
+          </div>
+          <div class="btn-links">
+            <a
+              href="https://phfernandesmc.github.io/My-tic-tac-toe/"
+              target="_blanck"
+            >
+              <button class="btn">Project Demo</button>
+            </a>
+            <a
+              href="https://github.com/PhFernandesMc/My-tic-tac-toe"
+              target="_blanck"
+            >
+              <button class="btn">Project Code</button>
+            </a>
+          </div>
+        </div>
+        <div class="project-techs">
+          <h2>Techs in this project:</h2>
+          <div>
+            <ul>
+              {
+                ticTacToe.map((tech: Objs): void => (
+                  <li class="tech-items">
+                    <Image
+                      src={tech.techImage}
+                      alt="html"
+                      class={"tech-icons"}
+                    />
+                    <p>{tech.techName}</p>
+                  </li>
+                ))
+              }
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="nav">
+    <button id="btn-prev" class="btn"> Prev</button>
+    <button id="btn-next" class="btn"> Next</button>
+  </div>
+</section>
+
+<script>
+  const slides: NodeListOf<Element> = document.querySelectorAll(".slide");
+  const btnPrev = document.querySelector("#btn-prev");
+  const btnNext = document.querySelector("#btn-next");
+  let counter = 0;
+  slides.forEach((slide: any, index) => {
+    slide.style.left = `${index * 100}%`;
+  });
+  btnPrev?.addEventListener("click", () => {
+    if (counter - 1 < 0) {
+      counter = slides.length - 1;
+      slideImage();
+    } else {
+      counter--;
+      slideImage();
+    }
+  });
+  btnNext?.addEventListener("click", () => {
+    if (counter + 1 > slides.length - 1) {
+      counter = 0;
+      slideImage();
+    } else {
+      counter++;
+      slideImage();
+    }
+  });
+
+  const slideImage = () => {
+    slides.forEach((slide: any) => {
+      slide.style.transform = `translateX(-${counter * 100}%)`;
+    });
+  };
+</script>
