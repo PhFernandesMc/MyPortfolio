@@ -36,6 +36,7 @@
       &-content {
         padding: 10px;
         flex-grow: 1;
+        max-height: 50%;
         background-color: $fifthColor;
         display: flex;
       }
@@ -137,20 +138,20 @@
       }
 
       #weather {
-        background-image: url("../../../public/images/weather.png");
+        background-image: url("/src/scss/components/images/weather.png");
       }
 
       #calculator {
-        background-image: url("../../../public/images/calculator.png");
+        background-image: url("/src/scss/components/images/calculator.png");
         background-position-y: -40px;
       }
 
       #memory {
-        background-image: url("../../../public/images/memory.png");
+        background-image: url("/src/scss/components/images/memory.png");
       }
 
       #ticTacToe {
-        background-image: url("../../../public/images/tictactoe.png");
+        background-image: url("/src/scss/components/images/tictactoe.png");
       }
     }
   }
