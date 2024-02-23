@@ -26,4 +26,22 @@
     font-size: 16px;
     font-weight: 300;
   }
+
+  .btn {
+    font-size: 16px;
+    padding: 10px 30px;
+    background-color: transparent;
+    color: $thirdColor;
+    border: none;
+    border: 3px solid $sixthColor;
+    border-radius: 10px;
+    transition: all 1s;
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0px 0px 8px $secondaryColor;
+      border-color: $secondaryColor;
+      transform: scale(1.03);
+    }
+  }
 }
